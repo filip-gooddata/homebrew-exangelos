@@ -1,34 +1,42 @@
 class Exangelos < Formula
   desc "Daemon with which agents subscribe to events from external sources"
   homepage "https://github.com/filip-gooddata/exangelos"
-  version "0.1.27"
+  version "0.1.28"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/filip-gooddata/exangelos/releases/download/v0.1.27/exangelos-0.1.27-darwin-arm64.tar.gz"
-      sha256 "e52c854c6493cd746239ae76ad540ef5ff498b9e19f1c58500207f63063985b3"
+      url "https://github.com/filip-gooddata/exangelos/releases/download/v0.1.28/exangelos-0.1.28-darwin-arm64.tar.gz"
+      sha256 "b2feb7d10135bb38bec69f5a86150e69ecb0d27d0e03df76e0e98201b732936f"
     end
     on_intel do
-      url "https://github.com/filip-gooddata/exangelos/releases/download/v0.1.27/exangelos-0.1.27-darwin-x64.tar.gz"
-      sha256 "c4f4439d49f92ea85fb5bde0a11df16107ed20fd51ad407ab7f17bcbadad5f85"
+      url "https://github.com/filip-gooddata/exangelos/releases/download/v0.1.28/exangelos-0.1.28-darwin-x64.tar.gz"
+      sha256 "963ea0fb3d020ce2dc1cecdaaa2276732ba4d96b9242072bfe6f7358504c71dc"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/filip-gooddata/exangelos/releases/download/v0.1.27/exangelos-0.1.27-linux-arm64.tar.gz"
-      sha256 "2d0d8f7519db58c4743609604de73ddae702b31ebfb48f0f8f5f93683a53c47e"
+      url "https://github.com/filip-gooddata/exangelos/releases/download/v0.1.28/exangelos-0.1.28-linux-arm64.tar.gz"
+      sha256 "ce53ba692c2cf1597a67268a6a0d945c48201a3289a6797d04480a7907c18b62"
     end
     on_intel do
-      url "https://github.com/filip-gooddata/exangelos/releases/download/v0.1.27/exangelos-0.1.27-linux-x64.tar.gz"
-      sha256 "3a8c8667bfab47c63735d613e36a7b1d73b5b8f762c9d48c8c7c166ade1f9b40"
+      url "https://github.com/filip-gooddata/exangelos/releases/download/v0.1.28/exangelos-0.1.28-linux-x64.tar.gz"
+      sha256 "2e9b374449664852cd4ee9eb9e96a2e4da4858a33c984eea94034e956b84265c"
     end
   end
 
   def install
     bin.install "exangelos"
     bin.install_symlink "exangelos" => "xng"
+  end
+
+  def caveats
+    <<~EOS
+      To teach Claude Code and Codex to use Exangelos, run:
+        exangelos skill install
+      Rerun it after each upgrade to update the skill.
+    EOS
   end
 
   service do
