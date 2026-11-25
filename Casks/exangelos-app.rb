@@ -1,11 +1,11 @@
 cask "exangelos-app" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.1.32"
-  sha256 arm:   "1318df354587f3afc68e495a54765bed5bda8db915f681884454dbd540b64c49",
-         intel: "3b222301380a044104311779ff06fefdb88568acc974f84a9d835c834276e171"
+  version "0.1.33"
+  sha256 arm:   "bf8498775a9da7393e317a4fa88b091dc2225a3e23d4a3238610a9d55ec1f5c4",
+         intel: "c34eb991f96898fa0da3a9308f2c41b4117c009626c51f65e8016110b0c81a4f"
 
-  url "https://github.com/filip-gooddata/exangelos/releases/download/v0.1.32/Exangelos_#{version}_#{arch}.dmg"
+  url "https://github.com/filip-gooddata/exangelos/releases/download/v0.1.33/Exangelos_#{version}_#{arch}.dmg"
   name "Exangelos"
   desc "Daemon with which agents subscribe to events from external sources"
   homepage "https://github.com/filip-gooddata/exangelos"
