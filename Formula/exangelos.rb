@@ -1,28 +1,28 @@
 class Exangelos < Formula
   desc "Daemon with which agents subscribe to events from external sources"
   homepage "https://github.com/filip-gooddata/exangelos"
-  version "0.1.20"
+  version "0.1.21"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/filip-gooddata/exangelos/releases/download/v0.1.20/exangelos-0.1.20-darwin-arm64.tar.gz"
-      sha256 "c0c0f48b8ff220e7d682b1bd8ab420b61d968ec865d7705331ca5f50e3730e6c"
+      url "https://github.com/filip-gooddata/exangelos/releases/download/v0.1.21/exangelos-0.1.21-darwin-arm64.tar.gz"
+      sha256 "a75f64d1ec5b724b46a12dd6fc236b5ae681a98be83188b94be368f089ddfa84"
     end
     on_intel do
-      url "https://github.com/filip-gooddata/exangelos/releases/download/v0.1.20/exangelos-0.1.20-darwin-x64.tar.gz"
-      sha256 "9b978ae2666b775ddac792e584cdf296caeffec675c64d467b6053d71814b1ee"
+      url "https://github.com/filip-gooddata/exangelos/releases/download/v0.1.21/exangelos-0.1.21-darwin-x64.tar.gz"
+      sha256 "7d5f8446924c459e1706e5f8c625703eef50d3d3d9b9080932eb225c279848c9"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/filip-gooddata/exangelos/releases/download/v0.1.20/exangelos-0.1.20-linux-arm64.tar.gz"
-      sha256 "06bb59ca7260bb17e500dcaf6e11357fef832822731f5e04580484daddb2053a"
+      url "https://github.com/filip-gooddata/exangelos/releases/download/v0.1.21/exangelos-0.1.21-linux-arm64.tar.gz"
+      sha256 "a9105af74a3178786072421894d5112971f5335664b3922423ad0a9fba8d4df1"
     end
     on_intel do
-      url "https://github.com/filip-gooddata/exangelos/releases/download/v0.1.20/exangelos-0.1.20-linux-x64.tar.gz"
-      sha256 "408ad786355139709ba1a21e2a8bcc45818f6e2d0b198c2f27f7600107e70e0e"
+      url "https://github.com/filip-gooddata/exangelos/releases/download/v0.1.21/exangelos-0.1.21-linux-x64.tar.gz"
+      sha256 "00b74e4ade04a5670b0fbb2e70bb00b4783f93323096dd91a4fd2d58c90c6012"
     end
   end
 
